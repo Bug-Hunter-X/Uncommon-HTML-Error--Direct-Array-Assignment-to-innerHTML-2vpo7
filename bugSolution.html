@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    const myArray = ["Hello", "World"];
+    // Correct approach: convert array to a string before assignment
+    document.getElementById("myDiv").innerHTML = myArray.join('<br>'); //use <br> or other tags to separate array elements
+  </script>
+</body>
+</html>
